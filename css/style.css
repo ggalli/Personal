@@ -1,10 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html,body{
     height: 100%;
+    background: #767B91;
 }
 
+.text-blue{
+    color: #84DCCF;
+}
+
+/*** HEADER ***/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #2A324B;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px 5px #2A324B;
+}
+
+.fa-gg{
+    font-size: 50px;
+    color: #84DCCF;
+}
+
+.fa-bars{
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+
+#menu:checked ~ ul{
+    margin: 0;
+}
+
+header ul{
+    list-style: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #2A324B, #767B91);
+    height: 100%;
+    width: 200px;
+    padding-top: 40px;
+    margin-right: -200px;
+    transition: .5s;
+}
+
+header a{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: .4s
+}
+
+header a:hover{
+    color: #84DCCF;
+}
+
+.close{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: .4s;
+}
+
+.close:hover{
+    color: #84DCCF;
+}
+
+
+/*** Hero ***/
+
+.hero{
+    color: #fff;
+    padding: 0 20px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5;
+}
+
+.hero h1{
+    font-size: 44px;
+    width: 300px;
+}
+
+.hero h2{
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+
+/*** Sobre ***/
+
+.sobre{
+    padding: 50px 30px;
+    text-align: center;
+    margin: 50px 20px;
+    background: #2A324B;
+}
+
+.sobre .fa-gg{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    text-align: left;
+    color: #fff;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.button{
+    margin-top: 20px;
+    background: 0;
+    border: 1px solid #84DCCF;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+.button:hover{
+    background: #84DCCF;
+}
